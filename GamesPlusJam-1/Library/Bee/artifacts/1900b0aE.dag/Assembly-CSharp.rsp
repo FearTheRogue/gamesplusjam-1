@@ -346,12 +346,15 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Script/Collecting.cs"
-"Assets/Script/ObjectPickUp.cs"
-"Assets/Script/PickUpObject.cs"
-"Assets/Script/PlayerController.cs"
-"Assets/Script/ScoreManager.cs"
-"Assets/Script/Timer.cs"
+"Assets/Scripts/CameraFollow.cs"
+"Assets/Scripts/Collecting.cs"
+"Assets/Scripts/Destroy.cs"
+"Assets/Scripts/ObjectPickUp.cs"
+"Assets/Scripts/PickUpObject.cs"
+"Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/ScoreManager.cs"
+"Assets/Scripts/SwitchItUp.cs"
+"Assets/Scripts/Timer.cs"
 -langversion:9.0
 
 /deterministic
