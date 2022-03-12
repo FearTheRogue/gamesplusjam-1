@@ -17,7 +17,7 @@ public class Timer : MonoBehaviour
         else
         {
             timeValue += 10; // setting time back += 90;
-            //SwitchItUp.instance.PickRandomSwitchUp();
+            SwitchItUp.instance.PickRandomSwitchUp();
         }
 
         DisplayTime(timeValue);

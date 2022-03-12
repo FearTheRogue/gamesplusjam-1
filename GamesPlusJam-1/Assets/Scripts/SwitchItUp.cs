@@ -9,6 +9,7 @@ public class SwitchItUp : MonoBehaviour
     public static SwitchItUp instance;
 
     [SerializeField] private TMP_Text switchUpText;
+    [SerializeField] private SwitchUp previousSwitchUp;
 
     [Header("Current Switch Up")]
     [SerializeField] private SwitchUp currentSwitchUp = SwitchUp.Normal;
@@ -49,7 +50,6 @@ public class SwitchItUp : MonoBehaviour
     [SerializeField] private Renderer rend;
     [SerializeField] private bool hasPlatform = false;
 
-
     private void Awake()
     {
         instance = this;
@@ -69,6 +69,12 @@ public class SwitchItUp : MonoBehaviour
         normalFOV = cam.orthographicSize;
     }
 
+    private void PreviousSwitchUp()
+    {
+        if(previousSwitchUp != currentSwitchUp)
+        previousSwitchUp = currentSwitchUp;
+    }
+
     public void PickRandomSwitchUp()
     {
         int currentlySelectedEnum = ((int)currentSwitchUp);
@@ -76,19 +82,17 @@ public class SwitchItUp : MonoBehaviour
 
         if (currentlySelectedEnum != randomValue)
         {
-            //Debug.Log("Currently Switch up was: " + currentSwitchUp + ". and is different from the random value: " + randomValue);
             currentSwitchUp = (SwitchUp)randomValue;
 
             return;
         }
 
-        //Debug.Log("Currently Switch up is: " + currentSwitchUp + ". and is the same as random value: " + randomValue);
         PickRandomSwitchUp();
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             PickRandomSwitchUp();
         }
@@ -98,8 +102,8 @@ public class SwitchItUp : MonoBehaviour
             case SwitchUp.Normal:
 
                 switchUpText.text = "Play as normal";
-
                 currentSwitchUp = SwitchUp.Normal;
+
                 ResetAll();
                 break;
 
@@ -107,6 +111,22 @@ public class SwitchItUp : MonoBehaviour
 
                 switchUpText.text = "Camera is upside down";
                 UpsideDownCam();
+
+                if (isInvertControls)
+                    ResetInvertControls();
+
+                if (isPlayerModelInvisible)
+                    ResetPlayerModelVisibility();
+
+                if (takePoints)
+                    ResetMinusPoints();
+
+                if (isFOVChanged)
+                    ResetCameraFOV();
+
+                if (hasPlatform)
+                    ResetPlatform();
+
                 break;
 
             case SwitchUp.InvertControls:
@@ -116,6 +136,22 @@ public class SwitchItUp : MonoBehaviour
 
                 if (!isInvertControls)
                 isInvertControls = InvertPlayerControls();
+
+                if (isCameraRotated)
+                    ResetUpsideDownCam();
+
+                if (isPlayerModelInvisible)
+                    ResetPlayerModelVisibility();
+
+                if (takePoints)
+                    ResetMinusPoints();
+
+                if (isFOVChanged)
+                    ResetCameraFOV();
+
+                if (hasPlatform)
+                    ResetPlatform();
+
                 break;
 
 
@@ -123,24 +159,88 @@ public class SwitchItUp : MonoBehaviour
 
                 switchUpText.text = "Player model is invisible. Spooky eyes!";
                 MakePlayerModelInvisible();
+
+                if (isCameraRotated)
+                    ResetUpsideDownCam();
+
+                if (isInvertControls)
+                    ResetInvertControls();
+
+                if (takePoints)
+                    ResetMinusPoints();
+
+                if (isFOVChanged)
+                    ResetCameraFOV();
+
+                if (hasPlatform)
+                    ResetPlatform();
+
                 break;
 
             case SwitchUp.MinusObjectScore:
 
                 switchUpText.text = "Points are now minus, or are points worth double? I can't remember";
                 MinusPoints();
+
+                if (isCameraRotated)
+                    ResetUpsideDownCam();
+
+                if (isInvertControls)
+                    ResetInvertControls();
+
+                if (isPlayerModelInvisible)
+                    ResetPlayerModelVisibility();
+
+                if (isFOVChanged)
+                    ResetCameraFOV();
+
+                if (hasPlatform)
+                    ResetPlatform();
+
                 break;
 
             case SwitchUp.SmallCameraFOV:
 
                 switchUpText.text = "Hope you can see well";
                 LimitCameraFOV();
+
+                if (isCameraRotated)
+                    ResetUpsideDownCam();
+
+                if (isInvertControls)
+                    ResetInvertControls();
+
+                if (isPlayerModelInvisible)
+                    ResetPlayerModelVisibility();
+
+                if (takePoints)
+                    ResetMinusPoints();
+
+                if (hasPlatform)
+                    ResetPlatform();
+
                 break;
 
             case SwitchUp.PlatformDeath:
 
                 switchUpText.text = "Wait! Don't touch the red platform";
                 ChangePlatform();
+
+                if (isCameraRotated)
+                    ResetUpsideDownCam();
+
+                if (isInvertControls)
+                    ResetInvertControls();
+
+                if (isPlayerModelInvisible)
+                    ResetPlayerModelVisibility();
+
+                if (takePoints)
+                    ResetMinusPoints();
+
+                if (isFOVChanged)
+                    ResetCameraFOV();
+
                 break;
 
             default:
@@ -174,6 +274,9 @@ public class SwitchItUp : MonoBehaviour
 
         if (isFOVChanged)
             ResetCameraFOV();
+
+        if (hasPlatform)
+            ResetPlatform();
     }
 
     private void ResetInvertControls()
@@ -203,6 +306,15 @@ public class SwitchItUp : MonoBehaviour
     private void ResetCameraFOV()
     {
         StartCoroutine(SetCameraFOV(normalFOV, false));
+    }
+
+    private void ResetPlatform()
+    {
+        rend = selectedGround.GetComponent<Renderer>();
+        rend.sharedMaterial = materials[0];
+
+        selectedGround = null;
+        hasPlatform = false;
     }
 
     private void UpsideDownCam()
