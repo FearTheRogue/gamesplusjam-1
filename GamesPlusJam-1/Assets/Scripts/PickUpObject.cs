@@ -11,7 +11,7 @@ public class PickUpObject : MonoBehaviour
     private BoxCollider2D pickUpArea;
     private bool isObjectInRange = false;
     private Rigidbody2D objectsRB;
-    [SerializeField] private float throwForce;
+    public float throwForce;
 
     [SerializeField] public bool hasPickUp = false;
     [SerializeField] private bool canThrow = false;
@@ -79,6 +79,7 @@ public class PickUpObject : MonoBehaviour
 
         if(!hasPickUp && !canThrow && holdingObject.transform.childCount > 0)
         {
+            Destroy(holdingObject.gameObject.transform.GetChild(0));
             Debug.Log("Has children");
         }
     }

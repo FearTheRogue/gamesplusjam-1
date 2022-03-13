@@ -28,7 +28,13 @@ public class Collecting : MonoBehaviour
         }
 
         if (!isSubtracting)
+        {
+            if(collision.gameObject.name.Contains("Rogue Pick Up"))
+            {
+                ScoreManager.instance.RoguePointRemove();
+            }
             ScoreManager.instance.AddPoint();
+        }
         else
             ScoreManager.instance.RemovePoint();
 

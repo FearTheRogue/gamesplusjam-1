@@ -2,14 +2,13 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 
-public enum SwitchUp { Normal, UpsideDownCam, InvertControls, PlayerModelInvisible, MinusObjectScore, SmallCameraFOV, PlatformDeath };
+public enum SwitchUp { Normal, UpsideDownCam, InvertControls, PlayerModelInvisible, MinusObjectScore, SmallCameraFOV, PlatformDeath, PlayerJumpHeight, PlayerMovementSpeed, BackgroundChange, RogueObject, HulkSmash, RemoveAllObjects };
 
 public class SwitchItUp : MonoBehaviour
 {
     public static SwitchItUp instance;
 
     [SerializeField] private TMP_Text switchUpText;
-    [SerializeField] private SwitchUp previousSwitchUp;
 
     [Header("Current Switch Up")]
     [SerializeField] private SwitchUp currentSwitchUp = SwitchUp.Normal;
@@ -50,6 +49,42 @@ public class SwitchItUp : MonoBehaviour
     [SerializeField] private Renderer rend;
     [SerializeField] private bool hasPlatform = false;
 
+    [Header("Player Jump")]
+    [SerializeField] private float currentJumpForce;
+    [SerializeField] private float jupiterJumpForce;
+    [SerializeField] private float normalJumpForce;
+    [SerializeField] private float jumpSpeed;
+    [SerializeField] private bool isJupiterJumpForce = false;
+
+    [Header("Player Movement")]
+    [SerializeField] private float currentMovementSpeed;
+    [SerializeField] private float fastMovementSpeed;
+    [SerializeField] private float normalMovementSpeed;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private bool isMoveFast = false;
+
+    [Header("Background Colour")]
+    [SerializeField] private Color currentBGColour;
+    [SerializeField] private Color changeBGTo;
+    [SerializeField] private float backgroundSpeed;
+    [SerializeField] private bool isBackgroundChanged = false;
+
+    [Header("Rogue Object")]
+    [SerializeField] private bool isObjectSpawned = false;
+    [SerializeField] private bool hasRogueObjectSpawned = false;
+    private SpawnObjects spawn;
+
+    [Header("Hulk Smash")]
+    [SerializeField] private float currentThrowingForce;
+    [SerializeField] private float hulkThrowingForce;
+    [SerializeField] private float normalThrowingForce;
+    [SerializeField] private float throwSpeed;
+    [SerializeField] private bool isThrowingChanged = false;
+    private PickUpObject pickup;
+
+    [Header("Remove All Objects")]
+    [SerializeField] private bool hasAllObjectsBeenRemoved = false;
+
     private void Awake()
     {
         instance = this;
@@ -64,15 +99,18 @@ public class SwitchItUp : MonoBehaviour
         controller = player.GetComponent<PlayerController>();
         playerSprite = player.GetComponent<SpriteRenderer>();
         camFollow = cam.GetComponent<CameraFollow>();
-        
 
+        pickup = player.GetComponent<PickUpObject>();
+
+        normalJumpForce = controller.jumpForce;
+        normalMovementSpeed = controller.movementSpeed;
         normalFOV = cam.orthographicSize;
-    }
+        normalThrowingForce = pickup.throwForce;
 
-    private void PreviousSwitchUp()
-    {
-        if(previousSwitchUp != currentSwitchUp)
-        previousSwitchUp = currentSwitchUp;
+        currentBGColour = cam.backgroundColor;
+
+        GameObject objectSpawner = GameObject.FindGameObjectWithTag("ObjectSpawner");
+        spawn = objectSpawner.GetComponent<SpawnObjects>();
     }
 
     public void PickRandomSwitchUp()
@@ -101,80 +139,38 @@ public class SwitchItUp : MonoBehaviour
         {
             case SwitchUp.Normal:
 
-                switchUpText.text = "Play as normal";
+                switchUpText.text = "Phew.. play as normal";
                 currentSwitchUp = SwitchUp.Normal;
 
-                ResetAll();
+                ResetOtherEnums();
                 break;
 
             case SwitchUp.UpsideDownCam:
 
-                switchUpText.text = "Camera is upside down";
+                switchUpText.text = "Camera is upside down. But you knew that.";
                 UpsideDownCam();
 
-                if (isInvertControls)
-                    ResetInvertControls();
-
-                if (isPlayerModelInvisible)
-                    ResetPlayerModelVisibility();
-
-                if (takePoints)
-                    ResetMinusPoints();
-
-                if (isFOVChanged)
-                    ResetCameraFOV();
-
-                if (hasPlatform)
-                    ResetPlatform();
-
+                ResetOtherEnums();
                 break;
 
             case SwitchUp.InvertControls:
 
-                switchUpText.text = "Controls are inverted";
+                switchUpText.text = "Controls are inverted. Is it 'a' or 'e'? I'm confused";
                 currentSwitchUp = SwitchUp.InvertControls;
 
                 if (!isInvertControls)
                 isInvertControls = InvertPlayerControls();
 
-                if (isCameraRotated)
-                    ResetUpsideDownCam();
-
-                if (isPlayerModelInvisible)
-                    ResetPlayerModelVisibility();
-
-                if (takePoints)
-                    ResetMinusPoints();
-
-                if (isFOVChanged)
-                    ResetCameraFOV();
-
-                if (hasPlatform)
-                    ResetPlatform();
+                ResetOtherEnums();
 
                 break;
 
-
             case SwitchUp.PlayerModelInvisible:
 
-                switchUpText.text = "Player model is invisible. Spooky eyes!";
+                switchUpText.text = "Poof!! You're invisible. Spoooooky eyes!";
                 MakePlayerModelInvisible();
 
-                if (isCameraRotated)
-                    ResetUpsideDownCam();
-
-                if (isInvertControls)
-                    ResetInvertControls();
-
-                if (takePoints)
-                    ResetMinusPoints();
-
-                if (isFOVChanged)
-                    ResetCameraFOV();
-
-                if (hasPlatform)
-                    ResetPlatform();
-
+                ResetOtherEnums();
                 break;
 
             case SwitchUp.MinusObjectScore:
@@ -182,43 +178,16 @@ public class SwitchItUp : MonoBehaviour
                 switchUpText.text = "Points are now minus, or are points worth double? I can't remember";
                 MinusPoints();
 
-                if (isCameraRotated)
-                    ResetUpsideDownCam();
-
-                if (isInvertControls)
-                    ResetInvertControls();
-
-                if (isPlayerModelInvisible)
-                    ResetPlayerModelVisibility();
-
-                if (isFOVChanged)
-                    ResetCameraFOV();
-
-                if (hasPlatform)
-                    ResetPlatform();
+                ResetOtherEnums();
 
                 break;
 
             case SwitchUp.SmallCameraFOV:
 
-                switchUpText.text = "Hope you can see well";
+                switchUpText.text = "Do you need glasses??";
                 LimitCameraFOV();
 
-                if (isCameraRotated)
-                    ResetUpsideDownCam();
-
-                if (isInvertControls)
-                    ResetInvertControls();
-
-                if (isPlayerModelInvisible)
-                    ResetPlayerModelVisibility();
-
-                if (takePoints)
-                    ResetMinusPoints();
-
-                if (hasPlatform)
-                    ResetPlatform();
-
+                ResetOtherEnums();
                 break;
 
             case SwitchUp.PlatformDeath:
@@ -226,24 +195,53 @@ public class SwitchItUp : MonoBehaviour
                 switchUpText.text = "Wait! Don't touch the red platform";
                 ChangePlatform();
 
-                if (isCameraRotated)
-                    ResetUpsideDownCam();
-
-                if (isInvertControls)
-                    ResetInvertControls();
-
-                if (isPlayerModelInvisible)
-                    ResetPlayerModelVisibility();
-
-                if (takePoints)
-                    ResetMinusPoints();
-
-                if (isFOVChanged)
-                    ResetCameraFOV();
+                ResetOtherEnums();
 
                 break;
 
-            default:
+            case SwitchUp.PlayerJumpHeight:
+
+                switchUpText.text = "Do you like that Jupiter gravity?";
+                ApplyJupiterJumpForce();
+                ResetOtherEnums();
+
+                break;
+
+            case SwitchUp.PlayerMovementSpeed:
+
+                switchUpText.text = "ZOOOOOOOOOOOOOOOM..";
+                ChangeMovementSpeed();
+                ResetOtherEnums();
+
+                break;
+
+            case SwitchUp.BackgroundChange:
+
+                switchUpText.text = "Did you pack your sunglasses?";
+                ChangeBackgroundColour();
+                ResetOtherEnums();
+
+                break;
+
+            case SwitchUp.RogueObject:
+
+                switchUpText.text = "Hmm.. Seems like a rogue object has spawned. I'm guessing you'd better watch out for that one";
+                SpawnRogueObject();
+                ResetOtherEnums();
+                break;
+
+            case SwitchUp.HulkSmash:
+
+                switchUpText.text = "HULK SMASH!! Becareful on where you throw the objects";
+                ChangeThrowForce();
+                ResetOtherEnums();
+                break;
+
+            case SwitchUp.RemoveAllObjects:
+
+                switchUpText.text = "Erm, where did the objects go?";
+                NoMoreObjects();
+                ResetOtherEnums();
                 break;
         }
 
@@ -251,32 +249,45 @@ public class SwitchItUp : MonoBehaviour
         {
             StartCoroutine(FlipCamera(rotatedRot.eulerAngles));
         }
-
-        if (Input.GetKeyDown(KeyCode.Backspace))
-        {
-            PickRandomPlatform();
-        }
     }
 
-    private void ResetAll()
+    private void ResetOtherEnums()
     {
-        if (isCameraRotated)
+        if (isCameraRotated && currentSwitchUp != SwitchUp.UpsideDownCam)
             ResetUpsideDownCam();
 
-        if (isInvertControls)
+        if (isInvertControls && currentSwitchUp != SwitchUp.InvertControls)
             ResetInvertControls();
 
-        if (isPlayerModelInvisible)
+        if (isPlayerModelInvisible && currentSwitchUp != SwitchUp.PlayerModelInvisible)
             ResetPlayerModelVisibility();
 
-        if (takePoints)
+        if (takePoints && currentSwitchUp != SwitchUp.MinusObjectScore)
             ResetMinusPoints();
 
-        if (isFOVChanged)
+        if (isFOVChanged && currentSwitchUp != SwitchUp.SmallCameraFOV)
             ResetCameraFOV();
 
-        if (hasPlatform)
+        if (hasPlatform && currentSwitchUp != SwitchUp.PlatformDeath)
             ResetPlatform();
+
+        if (isJupiterJumpForce && currentSwitchUp != SwitchUp.PlayerJumpHeight)
+            ResetJumpHeight();
+
+        if (isMoveFast && currentSwitchUp != SwitchUp.PlayerMovementSpeed)
+            ResetMovementSpeed();
+
+        if (isBackgroundChanged && currentSwitchUp != SwitchUp.BackgroundChange)
+            ResetBackgroundColour();
+
+        if (isThrowingChanged && currentSwitchUp != SwitchUp.HulkSmash)
+            ResetThrowingForce();
+
+        if (hasRogueObjectSpawned && currentSwitchUp != SwitchUp.RogueObject)
+            ResetRogueObjectSpawn();
+
+        if (hasAllObjectsBeenRemoved && currentSwitchUp != SwitchUp.RemoveAllObjects)
+            ResetRemovedObjects();
     }
 
     private void ResetInvertControls()
@@ -315,6 +326,40 @@ public class SwitchItUp : MonoBehaviour
 
         selectedGround = null;
         hasPlatform = false;
+    }
+
+    private void ResetJumpHeight()
+    {
+        StartCoroutine(FlipGravity(normalJumpForce));
+    }
+
+    private void ResetMovementSpeed()
+    {
+        StartCoroutine(FlipMovementSpeed(normalMovementSpeed));
+    }
+
+    private void ResetBackgroundColour()
+    {
+        cam.clearFlags = CameraClearFlags.SolidColor;
+
+        cam.backgroundColor = Color.Lerp(changeBGTo, currentBGColour, backgroundSpeed);
+
+        isBackgroundChanged = false;
+    }
+
+    private void ResetThrowingForce()
+    {
+        StartCoroutine(ChangeThrowingForce(normalThrowingForce));
+    }
+
+    private void ResetRogueObjectSpawn()
+    {
+        hasRogueObjectSpawned = false;
+    }
+
+    private void ResetRemovedObjects()
+    {
+        hasAllObjectsBeenRemoved = false;
     }
 
     private void UpsideDownCam()
@@ -378,6 +423,66 @@ public class SwitchItUp : MonoBehaviour
             PickRandomPlatform();
     }
 
+    private void ApplyJupiterJumpForce()
+    {
+        currentSwitchUp = SwitchUp.PlayerJumpHeight;
+
+        isJupiterJumpForce = true;
+
+        StartCoroutine(FlipGravity(jupiterJumpForce));
+    }
+
+    private void ChangeMovementSpeed()
+    {
+        currentSwitchUp = SwitchUp.PlayerMovementSpeed;
+
+        isMoveFast = true;
+
+        StartCoroutine(FlipMovementSpeed(fastMovementSpeed));
+    }
+
+    private void ChangeBackgroundColour()
+    {
+        currentSwitchUp = SwitchUp.BackgroundChange;
+
+        cam.clearFlags = CameraClearFlags.SolidColor;
+
+        cam.backgroundColor = Color.Lerp(currentBGColour, changeBGTo, backgroundSpeed);
+
+        isBackgroundChanged = true;
+    }
+
+    private void ChangeThrowForce()
+    {
+        currentSwitchUp = SwitchUp.HulkSmash;
+
+        isThrowingChanged = true;
+
+        StartCoroutine(ChangeThrowingForce(hulkThrowingForce));
+    }
+
+    private void SpawnRogueObject()
+    {
+        currentSwitchUp = SwitchUp.RogueObject;
+
+        if (!hasRogueObjectSpawned)
+        {
+            spawn.SpawnRogueObject();
+            hasRogueObjectSpawned = true;
+        }
+    }
+
+    private void NoMoreObjects()
+    {
+        currentSwitchUp = SwitchUp.RemoveAllObjects;
+
+        if (!hasAllObjectsBeenRemoved)
+        {
+            spawn.RemoveAllObjects();
+            hasAllObjectsBeenRemoved = true;
+        }
+    }
+
     IEnumerator FlipCamera(Vector3 desiredRot)
     {
         currentRot = cam.transform.rotation;
@@ -412,5 +517,47 @@ public class SwitchItUp : MonoBehaviour
         {
             isFOVChanged = false;
         }
+    }
+
+    IEnumerator FlipGravity(float amount)
+    {
+        currentJumpForce = controller.jumpForce;
+
+        float jumpForce = Mathf.MoveTowards(currentJumpForce, amount, jumpSpeed * Time.deltaTime);
+
+        controller.jumpForce = jumpForce;
+
+        yield return null;
+
+        if (currentJumpForce == normalJumpForce)
+            isJupiterJumpForce = false;
+    }
+
+    IEnumerator FlipMovementSpeed(float amount)
+    {
+        currentMovementSpeed = controller.movementSpeed;
+
+        float movementSpeed = Mathf.MoveTowards(currentMovementSpeed, amount, moveSpeed * Time.deltaTime);
+
+        controller.movementSpeed = movementSpeed;
+
+        yield return null;
+
+        if (currentMovementSpeed == normalMovementSpeed)
+            isMoveFast = false;
+    }
+
+    IEnumerator ChangeThrowingForce(float amount)
+    {
+        currentThrowingForce = pickup.throwForce;
+
+        float throwForce = Mathf.MoveTowards(currentThrowingForce, amount, throwSpeed * Time.deltaTime);
+
+        pickup.throwForce = throwForce;
+
+        yield return null;
+
+        if (currentThrowingForce == normalThrowingForce)
+            isThrowingChanged = false;
     }
 }

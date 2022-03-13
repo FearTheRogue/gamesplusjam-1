@@ -10,7 +10,7 @@ public class ScoreManager : MonoBehaviour
 
     [SerializeField] private TMP_Text scoreText;
     [SerializeField] private TMP_Text highscoreText;
-    
+
     private int score = 0;
     private int highscore = 0;
 
@@ -38,6 +38,12 @@ public class ScoreManager : MonoBehaviour
     public void RemovePoint()
     {
         score -= 1;
+        scoreText.text = "Score: " + score.ToString();
+    }
+
+    public void RoguePointRemove()
+    {
+        score -= 5;
         scoreText.text = "Score: " + score.ToString();
     }
 }

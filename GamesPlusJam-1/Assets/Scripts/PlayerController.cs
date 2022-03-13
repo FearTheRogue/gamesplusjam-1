@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float movementSpeed;
-    [SerializeField] private float jumpForce;
+    public float movementSpeed;
+    public float jumpForce;
     [SerializeField] private int extraJumpValue;
     private int extraJumps; 
     
@@ -73,12 +73,6 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = Vector2.up * jumpForce;
         }
-
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            invertControls = !invertControls;
-        }
-        
     }
 
     private void Flip()
