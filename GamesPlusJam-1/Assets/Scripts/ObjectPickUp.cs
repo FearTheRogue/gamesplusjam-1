@@ -22,7 +22,9 @@ public class ObjectPickUp : MonoBehaviour
 
         if (isGrounded)
         {
+            
             rb.constraints = RigidbodyConstraints2D.FreezePosition;
+            return;
         }
     }
 }

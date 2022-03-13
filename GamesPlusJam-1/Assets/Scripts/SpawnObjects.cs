@@ -24,7 +24,7 @@ public class SpawnObjects : MonoBehaviour
 
         if(currentTimer <= 0)
         {
-            StartCoroutine(ObjectSpawner(objectToSpawn));
+            StartCoroutine(ObjectSpawner());
 
             currentTimer = maxTimer;
         }
@@ -37,6 +37,10 @@ public class SpawnObjects : MonoBehaviour
 
     public void RemoveAllObjects()
     {
+        StopCoroutine(ObjectSpawner());
+
+        AudioManager.instance.Play("Remove All Objects");
+
         foreach (Transform obj in spawnPoints)
         {
             if(obj.childCount > 0)
@@ -51,7 +55,7 @@ public class SpawnObjects : MonoBehaviour
         randomPoint = Random.Range(0, spawnPoints.Length);
     }
 
-    IEnumerator ObjectSpawner(GameObject objToSpawn)
+    IEnumerator ObjectSpawner()
     {
         PickNewLocation();
 
@@ -64,9 +68,7 @@ public class SpawnObjects : MonoBehaviour
         } 
         else
         {
-            GameObject obj = Instantiate(objToSpawn, spawnPoints[randomPoint].position, transform.rotation, spawnPoints[randomPoint]);
+            GameObject obj = Instantiate(objectToSpawn, spawnPoints[randomPoint].position, transform.rotation, spawnPoints[randomPoint]);
         }
-
-        Debug.Log("Object spawned");
     }
 }

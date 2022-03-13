@@ -14,6 +14,9 @@ public class ScoreManager : MonoBehaviour
     private int score = 0;
     private int highscore = 0;
 
+    public int GetScore() { return score; }
+    public int GetHighScore() { return highscore; }
+
     private void Awake()
     {
         instance = this;

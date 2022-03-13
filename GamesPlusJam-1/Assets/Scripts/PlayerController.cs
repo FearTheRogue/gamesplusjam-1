@@ -20,6 +20,11 @@ public class PlayerController : MonoBehaviour
 
     public static bool invertControls = false;
 
+    private void Awake()
+    {
+        invertControls = false;
+    }
+
     private void Start()
     {
         extraJumps = extraJumpValue;
@@ -69,6 +74,9 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = Vector2.up * jumpForce;
             extraJumps--;
+
+            AudioManager.instance.Play("Player Jump");
+
         } else if (Input.GetKeyDown(KeyCode.Space) && extraJumps == 0 && isGrounded)
         {
             rb.velocity = Vector2.up * jumpForce;

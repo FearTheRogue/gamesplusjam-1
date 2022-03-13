@@ -14,8 +14,11 @@ public class PlatformCheck : MonoBehaviour
         if (!collision.CompareTag("Player"))
             return;
 
-        if(rend.sharedMaterial.name == "M_deathPlatform")
-        Destroy(collision.gameObject);
+        if (rend.sharedMaterial.name == "M_deathPlatform")
+        {
+            AudioManager.instance.Play("Player Dies");
+            Destroy(collision.gameObject);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)

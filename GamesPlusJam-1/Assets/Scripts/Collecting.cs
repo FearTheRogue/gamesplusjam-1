@@ -29,14 +29,23 @@ public class Collecting : MonoBehaviour
 
         if (!isSubtracting)
         {
-            if(collision.gameObject.name.Contains("Rogue Pick Up"))
+            if (collision.gameObject.name.Contains("Rogue Pick Up"))
             {
+                AudioManager.instance.Play("Rogue Object");
                 ScoreManager.instance.RoguePointRemove();
+
+                Destroy(collision.gameObject);
+                return;
             }
+
             ScoreManager.instance.AddPoint();
+            AudioManager.instance.Play("Object Collected");
         }
         else
+        {
             ScoreManager.instance.RemovePoint();
+            AudioManager.instance.Play("Minus Point");
+        }
 
         Destroy(collision.gameObject);
     }

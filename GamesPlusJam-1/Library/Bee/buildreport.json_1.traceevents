@@ -1,489 +1,357 @@
 ﻿{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1647127954481536, "dur": 922337203685477580, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1647127954483319, "dur": 25172, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1647127954508728, "dur": 51001, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1647127954559764, "dur": 276046, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1647127954835812, "dur": 3993072, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1647127958828911, "dur": 10236, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1647127967691889, "dur": 922337203685477580, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1647127967692115, "dur": 1748, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1647127967693865, "dur": 35883, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1647127967729748, "dur": 275087, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1647127968004837, "dur": 411432, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1647127968416271, "dur": 2585, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1647127968419298, "dur": 36, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
-{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
-{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 35942, "tid": 1, "ts": 1647127967866145, "dur": 123853, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1647127967867113, "dur": 42177, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1647127967972643, "dur": 4895, "ph": "X", "name": "OutputData.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1647127967977541, "dur": 12449, "ph": "X", "name": "Backend.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1647127967978276, "dur": 9400, "ph": "X", "name": "JsonToString", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1647127967994477, "dur": 1201, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1647127967993707, "dur": 1993, "ph": "X", "name": "Write chrome-trace events", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1647127968420115, "dur": 337, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1647193401123867, "dur": 922337203685477580, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1647193401125163, "dur": 14827, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1647193401140418, "dur": 343195, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1647193401483633, "dur": 10704, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1647193404276734, "dur": 922337203685477580, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1647193404276967, "dur": 1594, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1647193404278562, "dur": 83953, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1647193404362516, "dur": 1685, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1647193404364935, "dur": 36, "ph": "X", "name": "", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1647127968045435, "dur":1378, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968046816, "dur":36, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1647127968046864, "dur":15, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1647127968046880, "dur":481, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1647127968047414, "dur":1481, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968048895, "dur":0, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375421, "dur":389, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375810, "dur":37, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375847, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375851, "dur":20, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375871, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375873, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375880, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375882, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375889, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375891, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375897, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375899, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375908, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375910, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375916, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375919, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375924, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375938, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968375940, "dur":2990, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1647127968047837, "dur":1089, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1647127968048928, "dur":2840, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1647127968051778, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1647127968051782, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1647127968053257, "dur":333, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1647127968053593, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1647127968053660, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1647127968053874, "dur":2846, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1647127968056722, "dur":885, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":1, "ts":1647127968057612, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1647127968057648, "dur":1033, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":1, "ts":1647127968058697, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":1, "ts":1647127968058817, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1647127968058828, "dur":1602, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":1, "ts":1647127968060447, "dur":288181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":1, "ts":1647127968348632, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1647127968348638, "dur":26739, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":1, "ts":1647127968375394, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":1, "ts":1647127968375396, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1647127968048207, "dur":831, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1647127968049038, "dur":2734, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1647127968051778, "dur":1934, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":2, "ts":1647127968053716, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1647127968054703, "dur":2133, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":2, "ts":1647127968056852, "dur":2315, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1647127968059172, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1647127968059183, "dur":1493, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1647127968060693, "dur":81989, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":2, "ts":1647127968142685, "dur":16, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1647127968142706, "dur":19613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":2, "ts":1647127968162346, "dur":550, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":2, "ts":1647127968162910, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1647127968162929, "dur":28354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":2, "ts":1647127968191336, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":2, "ts":1647127968191514, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1647127968191522, "dur":15157, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":2, "ts":1647127968206744, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":2, "ts":1647127968207086, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1647127968207097, "dur":30099, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":2, "ts":1647127968237289, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":2, "ts":1647127968237368, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1647127968237375, "dur":14280, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":2, "ts":1647127968251741, "dur":123683, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1647127968047953, "dur":979, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1647127968048932, "dur":2878, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1647127968051810, "dur":1994, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1647127968053809, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1647127968054719, "dur":2431, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1647127968057167, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1647127968057266, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1647127968057962, "dur":1461, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1647127968059442, "dur":58269, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":3, "ts":1647127968117714, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1647127968117980, "dur":2005, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":3, "ts":1647127968120006, "dur":3335, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":3, "ts":1647127968123344, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1647127968123350, "dur":39093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":3, "ts":1647127968162516, "dur":1048, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":3, "ts":1647127968163569, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1647127968163583, "dur":43883, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":3, "ts":1647127968207525, "dur":211, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":3, "ts":1647127968207739, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1647127968207746, "dur":1253, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":3, "ts":1647127968209064, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1647127968209131, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1647127968209136, "dur":14032, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1647127968223231, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/level0" }}
-,{ "pid":12345, "tid":3, "ts":1647127968237196, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1647127968237213, "dur":14055, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/level0" }}
-,{ "pid":12345, "tid":3, "ts":1647127968251335, "dur":124083, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1647127968048065, "dur":901, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1647127968048967, "dur":2821, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1647127968051803, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1647127968051878, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1647127968055631, "dur":1963, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1647127968057615, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1647127968057645, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1647127968057792, "dur":2459, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1647127968060272, "dur":141506, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":4, "ts":1647127968201781, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1647127968201877, "dur":52104, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":4, "ts":1647127968254005, "dur":121417, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968048180, "dur":810, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968048990, "dur":2822, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968051812, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":5, "ts":1647127968051883, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968054742, "dur":3565, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":5, "ts":1647127968058680, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":5, "ts":1647127968058712, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968058794, "dur":3028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":5, "ts":1647127968061847, "dur":240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968062092, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968062275, "dur":1293, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968063616, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968063773, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968063863, "dur":1439, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968065376, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968065579, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968065592, "dur":1323, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968066974, "dur":199, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968067177, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968067187, "dur":1709, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968068962, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968069153, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968069160, "dur":1456, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968070673, "dur":174, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968070850, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968070857, "dur":1483, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968072404, "dur":173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968072580, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968072588, "dur":1411, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968074055, "dur":222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968074428, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968074440, "dur":1450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968075944, "dur":236, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UaaLAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968076183, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968076191, "dur":1375, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UaaLAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968077634, "dur":298, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968077937, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968077947, "dur":1231, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968079236, "dur":208, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968079448, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968079457, "dur":1317, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968080833, "dur":228, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968081156, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968081165, "dur":1335, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968082554, "dur":325, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968082882, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968082889, "dur":1326, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968084285, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968084477, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968084484, "dur":1692, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968086234, "dur":329, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968086568, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968086576, "dur":1853, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968088492, "dur":182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968088677, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968088684, "dur":1634, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968090384, "dur":193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968090580, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968090587, "dur":1733, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968092372, "dur":204, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968092581, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968092669, "dur":1425, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968094173, "dur":211, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968094387, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968094395, "dur":1416, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968095873, "dur":181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968096059, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968096070, "dur":1418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968097626, "dur":215, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968097873, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968097881, "dur":16424, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968114362, "dur":430, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968114798, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968114809, "dur":1839, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968116719, "dur":772, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968117497, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968117508, "dur":2594, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968120154, "dur":434, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968120592, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968120602, "dur":1568, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968122220, "dur":255, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968122478, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968122484, "dur":1541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968124084, "dur":284, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968124371, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968124378, "dur":19634, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968144075, "dur":2004, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968146082, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968160104, "dur":30867, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968191031, "dur":402, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968191436, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968191448, "dur":15755, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":5, "ts":1647127968207277, "dur":181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":5, "ts":1647127968207462, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968207472, "dur":14159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":5, "ts":1647127968221700, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/resources.assets" }}
-,{ "pid":12345, "tid":5, "ts":1647127968221777, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968221789, "dur":15469, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/resources.assets" }}
-,{ "pid":12345, "tid":5, "ts":1647127968237413, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":5, "ts":1647127968237483, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1647127968237492, "dur":14017, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":5, "ts":1647127968251561, "dur":123864, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968048252, "dur":809, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968049061, "dur":2748, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968051810, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":6, "ts":1647127968051875, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968054910, "dur":1997, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":6, "ts":1647127968056941, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1647127968057063, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968057078, "dur":1743, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1647127968058842, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":6, "ts":1647127968058879, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968058890, "dur":4868, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":6, "ts":1647127968063776, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968063953, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968063962, "dur":1529, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968065540, "dur":176, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968065719, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968065725, "dur":1251, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968067035, "dur":189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968067230, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968067241, "dur":1630, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968068931, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968069135, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968069146, "dur":1450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968070650, "dur":189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968070845, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968070856, "dur":1431, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968072339, "dur":246, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968072589, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968072596, "dur":1435, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968074086, "dur":1433, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968075525, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968075537, "dur":2828, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968078430, "dur":360, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968078794, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968078801, "dur":1433, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968080278, "dur":237, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968080518, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968080525, "dur":1200, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968081780, "dur":181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968081964, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968081971, "dur":1148, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968083176, "dur":208, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968083389, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968083400, "dur":1141, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968084597, "dur":193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968084793, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968084799, "dur":1411, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968086265, "dur":344, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968086702, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968086714, "dur":1651, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968088436, "dur":210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968088651, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968088659, "dur":1665, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968090389, "dur":322, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968090717, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968090727, "dur":1779, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968092562, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968092746, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968092753, "dur":1258, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968094071, "dur":279, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968094354, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968094364, "dur":1507, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968095929, "dur":192, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968096124, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968096132, "dur":1233, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968097413, "dur":361, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968097871, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968097882, "dur":16640, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968114588, "dur":229, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968114820, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968114829, "dur":1536, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968116436, "dur":216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968116657, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968116667, "dur":1248, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968117981, "dur":284, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968118268, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968118275, "dur":1373, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968119705, "dur":295, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968120005, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968120015, "dur":1433, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968121499, "dur":1092, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968122598, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968122607, "dur":2776, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968125438, "dur":667, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968126109, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968126120, "dur":35096, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968161271, "dur":311, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968161587, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968161600, "dur":29264, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968190932, "dur":3967, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968194902, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1647127968194908, "dur":43027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":6, "ts":1647127968238003, "dur":137416, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968048370, "dur":697, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968049067, "dur":2745, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968051812, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":7, "ts":1647127968051877, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968054731, "dur":2712, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":7, "ts":1647127968057458, "dur":1445, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1647127968058906, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968058916, "dur":1773, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1647127968060704, "dur":840, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1.exe" }}
-,{ "pid":12345, "tid":7, "ts":1647127968061547, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968061553, "dur":2030, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1.exe" }}
-,{ "pid":12345, "tid":7, "ts":1647127968063628, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968063783, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968063863, "dur":1687, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968065620, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968065798, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968065807, "dur":1903, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968067777, "dur":255, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968068038, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968068048, "dur":1328, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968069428, "dur":178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968069609, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968069620, "dur":1403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968071094, "dur":217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968071318, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968071327, "dur":1451, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968072846, "dur":193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968073043, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968073052, "dur":1380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968074494, "dur":410, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968074908, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968074919, "dur":1551, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968076524, "dur":191, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968076718, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968076726, "dur":1396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968078180, "dur":203, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968078386, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968078394, "dur":1229, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968079676, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968079854, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968079870, "dur":1174, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968081098, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968081287, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968081297, "dur":1217, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968082603, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968082789, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968082800, "dur":1146, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968083990, "dur":176, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968084212, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968084219, "dur":1376, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968085651, "dur":288, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968085944, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968085954, "dur":1839, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968087850, "dur":314, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968088170, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968088182, "dur":1568, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968089812, "dur":200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968090016, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968090025, "dur":1647, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968091734, "dur":189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968091928, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968091939, "dur":1622, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968093620, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968093819, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968093829, "dur":1502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968095388, "dur":190, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968095583, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968095591, "dur":1312, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968096958, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968097136, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968097146, "dur":15978, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968113186, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968113386, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968113397, "dur":1316, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968114768, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968114967, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968114977, "dur":1474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968116510, "dur":435, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968116948, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968116954, "dur":1623, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968118624, "dur":524, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968119151, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968119161, "dur":2254, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968121475, "dur":499, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968121979, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968121990, "dur":1833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968123879, "dur":223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968124231, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968124239, "dur":19834, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968144144, "dur":257, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968144410, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968144436, "dur":16237, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968160736, "dur":1499, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968162242, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968162256, "dur":44307, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":7, "ts":1647127968206621, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":7, "ts":1647127968206698, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968206808, "dur":15354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":7, "ts":1647127968222214, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/level0.resS" }}
-,{ "pid":12345, "tid":7, "ts":1647127968222273, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1647127968222278, "dur":15993, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/level0.resS" }}
-,{ "pid":12345, "tid":7, "ts":1647127968238333, "dur":137089, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968048480, "dur":629, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968049109, "dur":2694, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968051803, "dur":1573, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1647127968053381, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968054746, "dur":2033, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1647127968056799, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1647127968056829, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968057019, "dur":1419, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1647127968058457, "dur":2177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":8, "ts":1647127968060637, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968060649, "dur":1178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":8, "ts":1647127968061846, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":8, "ts":1647127968061885, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968062178, "dur":27698, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":8, "ts":1647127968089898, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968090070, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968090076, "dur":1638, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968091771, "dur":205, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968091978, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968091984, "dur":1532, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968093573, "dur":189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968093768, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968093778, "dur":1701, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968095550, "dur":1837, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968097391, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968097400, "dur":18579, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968116045, "dur":197, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968116326, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968116335, "dur":1383, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968117774, "dur":240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968118017, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968118173, "dur":1838, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968120074, "dur":199, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968120278, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968120288, "dur":1735, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968122072, "dur":277, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968122354, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968122362, "dur":1697, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968124113, "dur":219, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968124335, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968124341, "dur":1617, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968126018, "dur":2952, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968128981, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968128987, "dur":33985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968163060, "dur":327, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968163390, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968163398, "dur":43159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":8, "ts":1647127968206628, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1647127968206700, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968206713, "dur":30764, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1647127968237533, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/boot.config" }}
-,{ "pid":12345, "tid":8, "ts":1647127968237717, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1647127968237726, "dur":1164, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/GamesPlusjam/GamesPlusJam-1_Data/boot.config" }}
-,{ "pid":12345, "tid":8, "ts":1647127968238958, "dur":136462, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1647127968381218, "dur":3356, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1647127968420540, "dur": 2747, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1647127968419276, "dur": 4034, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1647193404313815, "dur":1913, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404315740, "dur":167, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1647193404315949, "dur":39, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1647193404315990, "dur":622, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1647193404316667, "dur":586, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404317253, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336487, "dur":226, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336713, "dur":59, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336772, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336777, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336787, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336790, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336802, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336805, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336813, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336815, "dur":16, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336831, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336836, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336846, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336850, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336862, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336867, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336878, "dur":1, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336907, "dur":4, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404336914, "dur":2468, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1647193404317163, "dur":156, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404317319, "dur":3435, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404320754, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1647193404320788, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404320864, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1647193404320885, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404320947, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1647193404320974, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404321036, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1647193404321097, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404321170, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1647193404321243, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404321297, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1647193404321358, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404321427, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1647193404321485, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404321548, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1647193404321634, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404321692, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1647193404321846, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404321903, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1647193404321959, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404322008, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1647193404322060, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404322123, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1647193404322179, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404322232, "dur":321, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1647193404322553, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404322608, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1647193404322687, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404322751, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1647193404322809, "dur":196, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404323006, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1647193404323150, "dur":519, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404323670, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":1, "ts":1647193404323732, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404323804, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1647193404323877, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404323954, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1647193404324066, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404324129, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1647193404324197, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1647193404325068, "dur":2797, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1647193404333105, "dur":3380, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404317018, "dur":275, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404317293, "dur":3455, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404320749, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1647193404320788, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404320859, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1647193404320902, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404320964, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":2, "ts":1647193404320987, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404321106, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1647193404321234, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404321305, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1647193404321377, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404321437, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1647193404321508, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404321573, "dur":1393, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1647193404322967, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404323034, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1647193404323092, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404323143, "dur":228, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1647193404323372, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404323432, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":2, "ts":1647193404323486, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404323539, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":2, "ts":1647193404323594, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404323650, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":2, "ts":1647193404323710, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404323766, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":2, "ts":1647193404323828, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404323883, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1647193404324055, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404324120, "dur":190, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1647193404324314, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1647193404328130, "dur":4538, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1647193404332750, "dur":3863, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404317457, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404317457, "dur":3291, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404320748, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1647193404320808, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404320883, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1647193404320908, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404320971, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":3, "ts":1647193404320998, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404321105, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1647193404321220, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404321320, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1647193404321451, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404321524, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1647193404321587, "dur":603, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404322191, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1647193404322252, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404322353, "dur":373, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1647193404322726, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404322793, "dur":275, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1647193404323068, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404323127, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1647193404323218, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404323292, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1647193404323353, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404323404, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1647193404323459, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404323514, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1647193404323568, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404323622, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1647193404323678, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404323778, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":3, "ts":1647193404323841, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404323894, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1647193404323957, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404324017, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":3, "ts":1647193404324075, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404324150, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":3, "ts":1647193404324223, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404325291, "dur":3282, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":3, "ts":1647193404328645, "dur":210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1647193404328855, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404328920, "dur":191, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1647193404329112, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404329177, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1647193404329246, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1647193404329257, "dur":3407, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1647193404332752, "dur":3763, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404317124, "dur":188, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404317313, "dur":3410, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404320746, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":4, "ts":1647193404320814, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404320901, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1647193404320920, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404320988, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":4, "ts":1647193404321007, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404321102, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1647193404321203, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404321264, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1647193404321342, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404321406, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1647193404321477, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404321539, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1647193404321665, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404321766, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1647193404321818, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404321868, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1647193404321922, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404321974, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1647193404322034, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404322083, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1647193404322136, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404322201, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1647193404322256, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404322309, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1647193404322365, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404322426, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1647193404322487, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404322548, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1647193404322601, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404322700, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1647193404322766, "dur":170, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404322937, "dur":257, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1647193404323194, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404323264, "dur":764, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1647193404324028, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404324089, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":4, "ts":1647193404324156, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404324236, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":4, "ts":1647193404324307, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404325623, "dur":3626, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":4, "ts":1647193404329310, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/resources.assets" }}
+,{ "pid":12345, "tid":4, "ts":1647193404330138, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404330154, "dur":2401, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/resources.assets" }}
+,{ "pid":12345, "tid":4, "ts":1647193404332620, "dur":264, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1647193404332884, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1647193404333012, "dur":3481, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1647193404317272, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1647193404317272, "dur":3432, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1647193404320747, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":5, "ts":1647193404320751, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1647193404320840, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/app.info" }}
+,{ "pid":12345, "tid":5, "ts":1647193404320843, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1647193404320905, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1647193404320937, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1647193404321000, "dur":15327, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!.exe" }}
+,{ "pid":12345, "tid":5, "ts":1647193404336328, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1647193404336426, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":5, "ts":1647193404336426, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404317359, "dur":14, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404317373, "dur":3372, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404320748, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1647193404320798, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404320889, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1647193404320915, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404320981, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1647193404321017, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404321092, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1647193404321168, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404321222, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1647193404321286, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404321353, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1647193404321414, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404321477, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1647193404321535, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404321591, "dur":273, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1647193404321864, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404321928, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1647193404321989, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404322049, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1647193404322104, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404322158, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1647193404322215, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404322268, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1647193404322314, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404322434, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1647193404322499, "dur":623, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404323123, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1647193404323192, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404323248, "dur":497, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":6, "ts":1647193404323746, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404323811, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":6, "ts":1647193404323869, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404323920, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1647193404323976, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404324046, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":6, "ts":1647193404324108, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404324171, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":6, "ts":1647193404324309, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404325965, "dur":6012, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":6, "ts":1647193404332085, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":6, "ts":1647193404332155, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1647193404332163, "dur":1285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":6, "ts":1647193404333510, "dur":2973, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404317525, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404317526, "dur":3213, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404320746, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1647193404320795, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404320874, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1647193404320895, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404320954, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":7, "ts":1647193404320974, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404321087, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1647193404321151, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404321208, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1647193404321267, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404321347, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1647193404321433, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404321495, "dur":497, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":7, "ts":1647193404321992, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404322052, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1647193404322221, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404322279, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1647193404322334, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404322404, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1647193404322464, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404322573, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":7, "ts":1647193404322728, "dur":214, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404322943, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1647193404323024, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404323084, "dur":192, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1647193404323277, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404323338, "dur":730, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":7, "ts":1647193404324068, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404324143, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1647193404324216, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404325042, "dur":5119, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1647193404330260, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/level1" }}
+,{ "pid":12345, "tid":7, "ts":1647193404330334, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404330341, "dur":1234, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/level1" }}
+,{ "pid":12345, "tid":7, "ts":1647193404331640, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/level0" }}
+,{ "pid":12345, "tid":7, "ts":1647193404331703, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1647193404331714, "dur":1004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/level0" }}
+,{ "pid":12345, "tid":7, "ts":1647193404332795, "dur":3714, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404317609, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404317610, "dur":3128, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404320747, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1647193404320800, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404320897, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1647193404320936, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404320993, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":8, "ts":1647193404321016, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404321102, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1647193404321179, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404321255, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1647193404321327, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404321395, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1647193404321457, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404321517, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.UaaLAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1647193404321582, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404321687, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1647193404321751, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404321804, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1647193404321857, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404321912, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1647193404321972, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404322027, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1647193404322082, "dur":750, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404322833, "dur":177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1647193404323011, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404323071, "dur":174, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1647193404323245, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404323312, "dur":315, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":8, "ts":1647193404323627, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404323689, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":8, "ts":1647193404323765, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404323833, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":8, "ts":1647193404323889, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404323981, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":8, "ts":1647193404324038, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404324097, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1647193404324158, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404324225, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1647193404324314, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404327418, "dur":4251, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1647193404331733, "dur":336, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":8, "ts":1647193404332075, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1647193404332082, "dur":1541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/James Bridgman/Desktop/Projects/Game Jams/Switch Up!/Switch Up!_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":8, "ts":1647193404333680, "dur":2822, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1647193404341350, "dur":2271, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1647193404365110, "dur": 4072, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1647193404364921, "dur": 4306, "ph": "X", "name": "Write chrome-trace events", "args": {} },

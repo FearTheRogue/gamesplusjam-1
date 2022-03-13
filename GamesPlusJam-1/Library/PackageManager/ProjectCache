@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637826193895366878
-    m_Hash: 634930817
+      ticks: 637827602448090063
+    m_Hash: 3960349704
   m_LockFileStatus:
     m_FilePath: C:/Users/James Bridgman/Documents/GitHub/gamesplusjam-1/GamesPlusJam-1/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637826194060377141
-    m_Hash: 3302214895
+      ticks: 637827602448249645
+    m_Hash: 3188883107
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -201,7 +201,7 @@ m_ResolvedPackages:
     version: default
   resolvedDependencies:
   - name: com.unity.ide.visualstudio
-    version: 2.0.12
+    version: 2.0.14
   - name: com.unity.test-framework
     version: 1.1.29
   - name: com.unity.ext.nunit
@@ -326,12 +326,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 3.0.7
     nextVersion: 
-- packageId: com.unity.ide.visualstudio@2.0.12
+- packageId: com.unity.ide.visualstudio@2.0.14
   testable: 0
   isDirectDependency: 1
-  version: 2.0.12
+  version: 2.0.14
   source: 1
-  resolvedPath: C:\Users\James Bridgman\Documents\GitHub\gamesplusjam-1\GamesPlusJam-1\Library\PackageCache\com.unity.ide.visualstudio@2.0.12
+  resolvedPath: C:\Users\James Bridgman\Documents\GitHub\gamesplusjam-1\GamesPlusJam-1\Library\PackageCache\com.unity.ide.visualstudio@2.0.14
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -391,13 +391,13 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637720564750000000
+  datePublishedTicks: 637782923640000000
   documentationUrl: 
-  hasRepository: 1
+  hasRepository: 0
   repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: 8d436ff053b9c59677b5e9799208143553cd02d9
+    type: 
+    url: 
+    revision: 
     path: 
   unityLifecycle:
     version: 2.0.12
@@ -3137,6 +3137,8 @@ m_ResolvedPackages:
     - 1.1.0-pre.10
     - 1.1.0-pre.11
     - 1.1.0-pre.41
+    - 1.1.0-pre.69
+    - 1.2.0
     compatible:
     - 1.0.1
     - 1.1.0-pre.7
@@ -3145,6 +3147,8 @@ m_ResolvedPackages:
     - 1.1.0-pre.10
     - 1.1.0-pre.11
     - 1.1.0-pre.41
+    - 1.1.0-pre.69
+    - 1.2.0
     verified: 1.0.1
   dependencies:
   - name: com.unity.modules.unitywebrequest

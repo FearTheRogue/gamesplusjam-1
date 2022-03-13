@@ -12,6 +12,7 @@ public class SwitchItUp : MonoBehaviour
 
     [Header("Current Switch Up")]
     [SerializeField] private SwitchUp currentSwitchUp = SwitchUp.Normal;
+    [SerializeField] private Animator anim;
 
     [Header("Camera")]
     [SerializeField] private Camera cam;
@@ -70,7 +71,6 @@ public class SwitchItUp : MonoBehaviour
     [SerializeField] private bool isBackgroundChanged = false;
 
     [Header("Rogue Object")]
-    [SerializeField] private bool isObjectSpawned = false;
     [SerializeField] private bool hasRogueObjectSpawned = false;
     private SpawnObjects spawn;
 
@@ -115,6 +115,9 @@ public class SwitchItUp : MonoBehaviour
 
     public void PickRandomSwitchUp()
     {
+        anim.SetTrigger("SwitchUp");
+        AudioManager.instance.Play("Switch Up");
+
         int currentlySelectedEnum = ((int)currentSwitchUp);
         int randomValue = Random.Range(0, System.Enum.GetValues(typeof(SwitchUp)).Length);
 
@@ -130,11 +133,6 @@ public class SwitchItUp : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            PickRandomSwitchUp();
-        }
-
         switch (currentSwitchUp)
         {
             case SwitchUp.Normal:
@@ -155,7 +153,7 @@ public class SwitchItUp : MonoBehaviour
 
             case SwitchUp.InvertControls:
 
-                switchUpText.text = "Controls are inverted. Is it 'a' or 'e'? I'm confused";
+                switchUpText.text = "Controls are inverted. Is it 'a' or 'd'? I'm confused";
                 currentSwitchUp = SwitchUp.InvertControls;
 
                 if (!isInvertControls)
@@ -167,7 +165,7 @@ public class SwitchItUp : MonoBehaviour
 
             case SwitchUp.PlayerModelInvisible:
 
-                switchUpText.text = "Poof!! You're invisible. Spoooooky eyes!";
+                switchUpText.text = "Did you just go Houdini on me? Spoooooky eyes!";
                 MakePlayerModelInvisible();
 
                 ResetOtherEnums();
@@ -175,7 +173,7 @@ public class SwitchItUp : MonoBehaviour
 
             case SwitchUp.MinusObjectScore:
 
-                switchUpText.text = "Points are now minus, or are points worth double? I can't remember";
+                switchUpText.text = "Points are now minus, or is it double? I can't remember";
                 MinusPoints();
 
                 ResetOtherEnums();
@@ -232,14 +230,14 @@ public class SwitchItUp : MonoBehaviour
 
             case SwitchUp.HulkSmash:
 
-                switchUpText.text = "HULK SMASH!! Becareful on where you throw the objects";
+                switchUpText.text = "HULK SMASH!! Becareful when throwing..";
                 ChangeThrowForce();
                 ResetOtherEnums();
                 break;
 
             case SwitchUp.RemoveAllObjects:
 
-                switchUpText.text = "Erm, where did the objects go?";
+                switchUpText.text = "Errr, where did the objects go?";
                 NoMoreObjects();
                 ResetOtherEnums();
                 break;
@@ -251,7 +249,7 @@ public class SwitchItUp : MonoBehaviour
         }
     }
 
-    private void ResetOtherEnums()
+    public void ResetOtherEnums()
     {
         if (isCameraRotated && currentSwitchUp != SwitchUp.UpsideDownCam)
             ResetUpsideDownCam();

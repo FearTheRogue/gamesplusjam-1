@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ObjectPickUp
   - ObjectSpawner
+  - Ground
   layers:
   - Default
   - TransparentFX
